@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Flood Prediction</string>
+    <string name="title_activity_rescuer_track">Map</string>
+    <string name="title_activity_track_victim">Map</string>
+</resources>

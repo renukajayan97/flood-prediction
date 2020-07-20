@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_color"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".RescueRequestStatusActivity">
+
+    <TextView
+        android:id="@+id/rescueStatusTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Request Received !"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/txt_color"
+        android:textSize="16sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:weightSum="3">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Rescue Assigned :"
+            android:textColor="@color/txt_color"
+            android:layout_weight="2"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/rescuerStatusTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="No"
+            android:textColor="@color/txt_color"
+            android:layout_weight="1"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/rescuerDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="12dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rescuer Details"
+        android:textColor="@color/txt_color"
+        android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="4"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:layout_weight="1"
+                android:textColor="@color/txt_color"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=": "
+                android:textColor="@color/txt_color"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/rescuerNameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Abin c kocheril"
+                android:layout_weight="3"
+                android:textColor="@color/txt_color"
+                android:textSize="16sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Phone"
+                android:layout_weight="1"
+                android:textColor="@color/txt_color"
+                android:textSize="16sp"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=": "
+                android:textColor="@color/txt_color"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/rescuerPhoneTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="7410852963"
+                android:layout_weight="3"
+                android:textColor="@color/txt_color"
+                android:textSize="16sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Location"
+                android:layout_weight="1"
+                android:textColor="@color/txt_color"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=": "
+                android:textColor="@color/txt_color"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/rescuerLocationTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:layout_weight="3"
+                android:textColor="@color/txt_color"
+                android:textSize="16sp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:visibility="gone"
+        android:id="@+id/rescuerTrackButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Track Rescuer"
+        android:background="@drawable/rect_button"
+        android:textColor="@color/white_color"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:layout_marginTop="20dp"/>
+
+</LinearLayout>

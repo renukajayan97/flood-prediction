@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RescuerTrackActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tracking Rescuer"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@color/white_color"
+        android:padding="8dp"
+        android:textSize="18sp"
+        android:textAlignment="center"/>
+
+    <fragment
+        android:id="@+id/map"
+        android:layout_gravity="center"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        tools:context=".RescuerTrackActivity"
+        android:layout_margin="30dp"/>
+
+    <Button
+        android:id="@+id/rescuedButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Rescued"
+        android:background="@drawable/rect_button"
+        android:textColor="@color/white_color"
+        android:textAllCaps="false"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textSize="16sp" />
+
+</LinearLayout>

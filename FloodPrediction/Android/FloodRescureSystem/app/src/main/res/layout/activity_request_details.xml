@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white_color"
+    android:padding="20dp"
+    tools:context=".RequestDetailsActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Rescue Request Details"
+        android:textColor="@color/white_color"
+        android:background="@color/colorPrimaryDark"
+        android:padding="8dp"
+        android:textSize="16sp"/>
+
+    <LinearLayout
+        android:id="@+id/rescuerDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="12dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="4"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:layout_weight="1"
+                android:textColor="@color/txt_color"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=": "
+                android:textColor="@color/txt_color"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/requestNameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Abin c kocheril"
+                android:layout_weight="3"
+                android:textColor="@color/txt_color"
+                android:textSize="16sp"
+                android:background="@drawable/rect_gray"
+                android:padding="5dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Phone"
+                android:layout_weight="1"
+                android:textColor="@color/txt_color"
+                android:textSize="16sp"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=": "
+                android:textColor="@color/txt_color"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/requestPhoneTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="7410852963"
+                android:layout_weight="3"
+                android:textColor="@color/txt_color"
+                android:textSize="16sp"
+                android:background="@drawable/rect_gray"
+                android:padding="5dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Location"
+                android:layout_weight="1"
+                android:textColor="@color/txt_color"
+                android:textSize="16sp"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=": "
+                android:textColor="@color/txt_color"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/requestLocationTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="7410852963"
+                android:layout_weight="3"
+                android:textColor="@color/txt_color"
+                android:textSize="16sp"
+                android:background="@drawable/rect_gray"
+                android:padding="5dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Emergency"
+                android:textColor="@color/txt_color"
+                android:textSize="16sp"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=": "
+                android:textColor="@color/txt_color"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/requestEmergencyTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="7410852963"
+                android:layout_weight="3"
+                android:textColor="@color/txt_color"
+                android:textSize="16sp"
+                android:background="@drawable/rect_gray"
+                android:padding="5dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Needs"
+                android:textColor="@color/txt_color"
+                android:textSize="16sp"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=": "
+                android:textColor="@color/txt_color"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/requestNeedsTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="7410852963"
+                android:layout_weight="3"
+                android:textColor="@color/txt_color"
+                android:textSize="16sp"
+                android:background="@drawable/rect_gray"
+                android:padding="5dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hazards"
+                android:textColor="@color/txt_color"
+                android:textSize="16sp"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=": "
+                android:textColor="@color/txt_color"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/requestHazardsTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="7410852963"
+                android:layout_weight="3"
+                android:textColor="@color/txt_color"
+                android:textSize="16sp"
+                android:background="@drawable/rect_gray"
+                android:padding="5dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="People Count"
+                android:textColor="@color/txt_color"
+                android:textSize="16sp"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=": "
+                android:textColor="@color/txt_color"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/requestPeopleTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="7410852963"
+                android:layout_weight="3"
+                android:textColor="@color/txt_color"
+                android:textSize="16sp"
+                android:background="@drawable/rect_gray"
+                android:padding="5dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pets Count"
+                android:textColor="@color/txt_color"
+                android:textSize="16sp"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=": "
+                android:textColor="@color/txt_color"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/requestPetsTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="7410852963"
+                android:layout_weight="3"
+                android:textColor="@color/txt_color"
+                android:textSize="16sp"
+                android:background="@drawable/rect_gray"
+                android:padding="5dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Disabled"
+                android:textColor="@color/txt_color"
+                android:textSize="16sp"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=": "
+                android:textColor="@color/txt_color"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/requestDisabledTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="7410852963"
+                android:layout_weight="3"
+                android:textColor="@color/txt_color"
+                android:textSize="16sp"
+                android:background="@drawable/rect_gray"
+                android:padding="5dp"/>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Message"
+            android:layout_weight="1"
+            android:textColor="@color/txt_color"
+            android:textSize="16sp"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:id="@+id/requestMessageTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:minLines="3"
+            android:layout_marginTop="8dp"
+            android:layout_weight="3"
+            android:textColor="@color/txt_color"
+            android:textSize="16sp"
+            android:background="@drawable/rect_gray"
+            android:padding="5dp"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/requestTrackLocationButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Track Location"
+        android:background="@drawable/rect_button"
+        android:textColor="@color/white_color"
+        android:textAllCaps="false"
+        android:textSize="16sp"/>
+
+
+</LinearLayout>
